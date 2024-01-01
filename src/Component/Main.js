@@ -12,6 +12,8 @@ function Main(){
       const error =(text2)=>{toast.error(text2, {
         position: toast.POSITION.TOP_CENTER
       });}
+
+      
    
     let[Data,setData]= useState("")
     function getValue(e){
@@ -36,8 +38,8 @@ function Main(){
 
    function deleteBtn(e){
     var as=document.querySelector(".grocery");
+    error("Item Deleted")
     as.remove();
-    
    }
 
    
